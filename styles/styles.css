@@ -26,3 +26,16 @@ nav ul li a:hover {
   min-height: 800px;
   background-color: wheat;
 }
+
+.left-column{
+  width: 68%;
+  background: grey;
+  display: inline-block;
+  padding: 10px;
+}
+
+.aside-column{
+  width: 28%;
+  float: right;
+  padding: 10px;
+}
