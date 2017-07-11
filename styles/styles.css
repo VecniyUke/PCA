@@ -22,20 +22,65 @@ nav ul li a:hover {
   color: darkgoldenrod;
 }
 
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: firebrick;
+  margin: 0;
+}
+
 .content {
   min-height: 800px;
   background-color: wheat;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  z-index: 0;
+  position: relative;
+  padding-top: 20px;
 }
 
-.left-column{
+.left-column {
   width: 68%;
   background: grey;
   display: inline-block;
   padding: 10px;
 }
 
-.aside-column{
+.aside-column {
   width: 28%;
   float: right;
   padding: 10px;
+}
+
+header {
+  height: 60px;
+  background: lightgoldenrodyellow;
+  margin-top: -16px;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-top: 30px;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
+  box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
+}
+
+
+.main-page-img{
+        width: 100%;
+    }
+
+    @media screen and (min-width: 800px) {
+      .main-page-img{
+          width: 50%;
+          float: left;
+      }
 }

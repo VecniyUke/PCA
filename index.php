@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pancakes Academy</title>
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <!-- Style files -->
-  <link rel="stylesheet" href="./styles/styles.css" type="text/css">
-  <!-- Beast files -->
-  <script src="./js/scripts.js"></script>
-</head>
-
-<body>
  <?php include 'template/header.php'; ?>
+<img class="main-page-img" src="http://momsdish.com/sites/default/files/styles/recipe_image_1600x900_scale/public/recipe/image/1375139332.JPG" alt="">
 
-  <main class="content">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis labore cumque nisi, id. Neque ipsam officiis ratione adipisci vitae, quis fugit laboriosam. Aperiam necessitatibus sed, sunt. Officia, reprehenderit, iusto.
 
-  <section class="left-column">
-    <h3>MAIN PAGE</h3>
-    <h4>Оладьи ВСЕМ!!</h4>
-  </section>
-
-  <aside class="aside-column">
-    test
-  </aside>
-
-  </main>
  <?php include 'template/footer.php'; ?>
-
-</body>
-
-</html>
