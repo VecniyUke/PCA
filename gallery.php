@@ -16,18 +16,7 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Our Gallery</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="#">Geography</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Sigh in</a></li>
-      </ul>
-    </nav>
-  </header>
+  <?php include 'template/header.php'; ?>
 
   <main class="content">
 
@@ -36,14 +25,7 @@
 
   </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </nav>
-  </footer>
+   <?php include 'template/footer.php'; ?>
 </body>
 
 </html>
