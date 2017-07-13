@@ -11,6 +11,10 @@ nav ul {
   display: table;
 }
 
+.footer nav ul{
+    display: inline-block;
+}
+
 nav ul li a {
   text-decoration: none;
   color: chocolate;
@@ -83,4 +87,15 @@ header {
           width: 50%;
           float: left;
       }
+}
+
+
+.footer{
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  -webkit-box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
+  box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
+  z-index: 1;
+  position: relative;
 }

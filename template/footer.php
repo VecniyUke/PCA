@@ -1,11 +1,11 @@
 
     </main>
   </div>
-  <footer>
+  <footer class="footer">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Дом</a></li>
+        <li><a href="#">Копирайт</a></li>
       </ul>
     </nav>
   </footer>
