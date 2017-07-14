@@ -3,6 +3,7 @@ nav ul li {
   display: inline-block;
   font-family: Arial;
   margin-right: 40px;
+  position: relative;
 }
 
 nav ul {
@@ -26,6 +27,12 @@ nav ul li a:hover {
   color: darkgoldenrod;
 }
 
+nav ul li a.logo-link:hover {
+  background-color: transparent;
+  color: darkgoldenrod;
+}
+
+
 .container {
   width: 95%;
   margin-left: auto;
@@ -33,7 +40,7 @@ nav ul li a:hover {
 }
 
 body {
-  background: firebrick;
+  background: rgba(178,34,34,0.85);
   margin: 0;
 }
 
@@ -75,6 +82,21 @@ header {
   -webkit-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
   box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
+}
+
+.logo-image{
+  width: 60px;
+    position: absolute;
+    right: 10px;
+    top: -13px;
+    border: 1px solid;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.logo-image:hover{
+    opacity: 1;
+    border-color: firebrick;
 }
 
 

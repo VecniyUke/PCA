@@ -20,7 +20,7 @@
     <header>
     <nav>
       <ul>
-        <li><a href="index.php">Дом</a></li>
+        <li><a class="logo-link" href="index.php"><img class="logo-image" src="logo.jpg" alt="Домой"></a></li>
         <li><a href="gallery.php">Галлерея</a></li>
         <li><a href="stories.html">Истории</a></li>
         <li><a href="#">География</a></li>
