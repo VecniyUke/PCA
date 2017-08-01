@@ -1,0 +1,33 @@
+$mainColor:blue;
+
+
+
+
+.containerMega
+{
+	.container
+	{
+		
+		.header
+		{
+			&:hover{color:$mainColor;}
+			box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		}
+
+		.header-text
+		{
+
+			box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+			color:$mainColor;
+
+		}
+		.header-subtext
+		{
+			box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+			color:$mainColor;
+
+		}
+	}
+
+}
+
