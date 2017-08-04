@@ -13,24 +13,15 @@ nav ul li {
   position: relative;
 }
 
-
-
-
 nav ul {
   margin-left: auto;
   margin-right: auto;
   display: table;
 }
 
-
-
-
 .footer nav ul{
     display: inline-block;
 }
-
-
-
 
 nav ul li a {
   text-decoration: none;
@@ -38,23 +29,15 @@ nav ul li a {
   padding: 10px;
 }
 
-
-
-
 nav ul li a:hover {
   background-color: whitesmoke;
   color: darkgoldenrod;
 }
 
-
-
-
 nav ul li a.logo-link:hover {
   background-color: transparent;
   color: darkgoldenrod;
 }
-
-
 
 
 .container {
@@ -63,16 +46,10 @@ nav ul li a.logo-link:hover {
   margin-right: auto;
 }
 
-
-
-
 body {
   background: rgba(178,34,34,0.85);
   margin: 0;
 }
-
-
-
 
 .content {
   min-height: 800px;
@@ -86,9 +63,6 @@ body {
   padding-top: 20px;
 }
 
-
-
-
 .left-column {
   width: 68%;
   background: grey;
@@ -96,17 +70,11 @@ body {
   padding: 10px;
 }
 
-
-
-
 .aside-column {
   width: 28%;
   float: right;
   padding: 10px;
-}
-
-
-
+} 
 
 header {
   height: 60px;
@@ -118,11 +86,10 @@ header {
   padding-top: 30px;
   z-index: 1;
   position: relative;
+  -webkit-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
   box-shadow: -1px 6px 5px -3px rgba(0, 0, 0, 0.33);
 }
-
-
-
 
 .logo-image{
   width: 60px;
@@ -134,25 +101,17 @@ header {
     opacity: 0.9;
 }
 
-
-
-
 .logo-image:hover{
     opacity: 1;
     border-color: firebrick;
 }
 
 
-
-
 .main-page-img{
         width: 100%;
     }
 
-
-
-
-@media screen and (min-width: 800px) {
+    @media screen and (min-width: 800px) {
       .main-page-img{
           width: 50%;
           float: left;
@@ -160,11 +119,11 @@ header {
 }
 
 
-
-
 .footer{
   background-color: lightgoldenrodyellow;
   text-align: center;
+  -webkit-box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
   box-shadow: 0px -6px 6px -1px rgba(0,0,0,0.33);
   z-index: 1;
   position: relative;

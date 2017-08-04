@@ -1,56 +1,46 @@
 var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    simplevars = require('postcss-simple-vars'),
-    nested = require('postcss-nested'),
-    cssImports = require('postcss-import'),
-    browserSync = require('browser-sync'),
-    mixins = require('postcss-mixins'),
-    watch = require('gulp-watch'),
-    browserSync = require('browser-sync').create();;
+  postcss = require('gulp-postcss'),
+  autoprefixer = require('autoprefixer'),
+  simplevars = require('postcss-simple-vars'),
+  nested = require('postcss-nested'),
+  cssImports = require('postcss-import'),
+  browserSync = require('browser-sync'),
+  mixins = require('postcss-mixins'),
+  watch = require('gulp-watch'),
+  browserSync = require('browser-sync').create();
 
-gulp.task('default', function(){
+gulp.task('default', function() {
 
-console.log('Worthless text of life');
+  browserSync.init({notify: false, proxy: 'localhost/PCA'});
 
-
-});
-
-
-gulp.task('watchtask', function(){
-
-    browserSync.init({
-    notify: false,
-    proxy:'localhost/PCA'
-  });
-
-watch('./**/*.php', function() {
+  watch('./**/*.php', function() {
     browserSync.reload();
   });
 
-  watch('./**/*.css', function() {
-gulp.start('test');
+  watch('./dev-styles/*.css', function() {
+    // gulp.start('css');
     gulp.start('cssInject');
-	
+
   });
 
 });
 
-gulp.task('cssInject',  function() {
-  return gulp.src('./**/*.css')
-    .pipe(browserSync.stream());
+gulp.task('watchtask', function() {
+
+
+
 });
 
+gulp.task('cssInject',['css'], function() {
+  return gulp.src('./styles/*.css').pipe(browserSync.stream());
+});
 
+gulp.task('css', function() {
 
+  return gulp.src('./dev-styles/styles.css')
+  .pipe(postcss([cssImports, simplevars, nested, autoprefixer]))
+  .pipe(gulp.dest('./styles/'));
 
-gulp.task('test', function(){
-
-return gulp.src('./styles/rawstyle.css')
-.pipe(postcss([cssImports, simplevars, nested, autoprefixer]))
-.pipe(gulp.dest('./modified-styles/'));
-
-
-console.log('Worthless test');
+  console.log('Worthless test');
 
 });

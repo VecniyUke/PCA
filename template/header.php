@@ -9,10 +9,20 @@
   <title>Академия Оладушек</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
   <!-- Style files -->
   <link rel="stylesheet" href="./styles/styles.css?<?php echo rand(1,100000000);?>" type="text/css">
   <!-- Beast files -->
   <script src="./js/scripts.js"></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+
+
 </head>
 
 <body>
