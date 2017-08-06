@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   mixins = require('postcss-mixins'),
   watch = require('gulp-watch'),
-  browserSync = require('browser-sync').create();
+  browserSync = require('browser-sync').create(),
+  cssnano = require('cssnano');
 
 gulp.task('default', function() {
 
@@ -17,17 +18,10 @@ gulp.task('default', function() {
     browserSync.reload();
   });
 
-  watch('./dev-styles/*.css', function() {
-    // gulp.start('css');
+  watch('./dev-styles/**/*.css', function() {
     gulp.start('cssInject');
 
   });
-
-});
-
-gulp.task('watchtask', function() {
-
-
 
 });
 
@@ -39,7 +33,9 @@ gulp.task('css', function() {
 
   return gulp.src('./dev-styles/styles.css')
   .pipe(postcss([cssImports, simplevars, nested, autoprefixer]))
-  .pipe(gulp.dest('./styles/'));
+  .pipe(gulp.dest('./styles/'))
+  .pipe(postcss([cssnano]))
+  .pipe(gulp.dest('./styles/minified_styles/'));
 
   console.log('Worthless test');
 
